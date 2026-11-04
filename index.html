@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Kenya, mi amor · 2 años</title>
+  <meta name="description" content="Dos años contigo: nuestras fotos y nuestras canciones." />
+  <meta name="theme-color" content="#2a0f1a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="locked">
+
+  <!-- Portada: el toque que la abre es el que permite que suene la música (sobre todo en iPhone). -->
+  <section class="cover" id="cover">
+    <div class="hearts" aria-hidden="true"></div>
+    <div class="cover__inner">
+      <p class="cover__kicker">3 de noviembre · 2 años</p>
+      <h1 class="cover__name">Kenya</h1>
+      <p class="cover__sub">mi amor</p>
+      <button class="cover__open" id="openGift" type="button">
+        <span class="cover__heart" aria-hidden="true">♥</span>
+        Abre tu regalo
+      </button>
+      <p class="cover__hint">Sube el volumen 🎶</p>
+    </div>
+  </section>
+
+  <main class="page" id="page">
+
+    <section class="counter reveal">
+      <p class="eyebrow">Llevamos juntos</p>
+      <div class="counter__grid">
+        <div><span id="cYears">2</span><small>años</small></div>
+        <div><span id="cDays">0</span><small>días</small></div>
+        <div><span id="cHours">0</span><small>horas</small></div>
+        <div><span id="cMinutes">0</span><small>minutos</small></div>
+        <div><span id="cSeconds">0</span><small>segundos</small></div>
+      </div>
+      <p class="counter__foot">y quiero que este número nunca deje de crecer</p>
+    </section>
+
+    <section class="letter reveal">
+      <p class="eyebrow">Para ti</p>
+      <div class="letter__paper">
+        <p class="letter__hello">Kenya, mi amor:</p>
+        <p>Hoy cumplimos dos años, y todavía me sorprende la suerte que tengo de que seas tú.</p>
+        <p>Aquí guardé un pedacito de todo lo que hemos vivido: nuestras fotos y las canciones que, de alguna forma, siempre terminan hablando de nosotros.</p>
+        <p>Gracias por cada risa, por cada abrazo y por quedarte. Lo que viene lo quiero vivir contigo.</p>
+        <p class="letter__sign">Te amo con todo mi corazón.<br /><span>Santi</span></p>
+      </div>
+    </section>
+
+    <section class="gallery reveal" aria-labelledby="galleryTitle">
+      <p class="eyebrow">Nuestros momentos</p>
+      <h2 id="galleryTitle">Algunas de nuestras tantas fotos</h2>
+      <button class="slideshow-btn" id="slideshowBtn" type="button">▶ Verlas una por una</button>
+      <div class="grid" id="grid"></div>
+      <p class="gallery__empty" id="galleryEmpty" hidden>Aquí van nuestras fotos ♥</p>
+    </section>
+
+    <section class="playlist reveal" aria-labelledby="playlistTitle">
+      <p class="eyebrow">Nuestra música</p>
+      <h2 id="playlistTitle">Canciones que nos gustan a los dos</h2>
+      <ol class="songs" id="songs"></ol>
+    </section>
+
+    <footer class="footer">
+      <p>Hecho con mucho amor para ti, Kenya.</p>
+      <p class="footer__heart" aria-hidden="true">♥</p>
+    </footer>
+  </main>
+
+  <!-- Reproductor flotante -->
+  <div class="player" id="player" hidden>
+    <button class="player__btn" id="prevBtn" type="button" aria-label="Canción anterior">⏮</button>
+    <button class="player__btn player__btn--main" id="playBtn" type="button" aria-label="Reproducir">▶</button>
+    <button class="player__btn" id="nextBtn" type="button" aria-label="Siguiente canción">⏭</button>
+    <div class="player__info">
+      <span class="player__title" id="songTitle">—</span>
+      <span class="player__artist" id="songArtist"></span>
+    </div>
+    <div class="player__bars" id="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  </div>
+
+  <!-- Visor de fotos -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lbClose" type="button" aria-label="Cerrar">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Foto anterior">‹</button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" alt="" />
+      <figcaption id="lbCount"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Foto siguiente">›</button>
+  </div>
+
+  <!-- El reproductor de YouTube: diminuto e invisible, solo para el audio -->
+  <div class="yt-holder" aria-hidden="true"><div id="yt"></div></div>
+
+  <script src="fotos/fotos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
