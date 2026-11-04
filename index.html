@@ -53,12 +53,16 @@
       </div>
     </section>
 
-    <section class="gallery reveal" aria-labelledby="galleryTitle">
-      <p class="eyebrow">Nuestros momentos</p>
-      <h2 id="galleryTitle">Algunas de nuestras tantas fotos</h2>
-      <button class="slideshow-btn" id="slideshowBtn" type="button">▶ Verlas una por una</button>
-      <div class="grid" id="grid"></div>
+    <section class="gallery" aria-labelledby="galleryTitle">
+      <div class="reveal">
+        <p class="eyebrow">Nuestra historia</p>
+        <h2 id="galleryTitle">Algunas de nuestras tantas fotos</h2>
+        <p class="gallery__intro">Baja despacito: cada foto trae una nota para ti.</p>
+        <button class="slideshow-btn" id="slideshowBtn" type="button">▶ Verlas una por una</button>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
       <p class="gallery__empty" id="galleryEmpty" hidden>Aquí van nuestras fotos ♥</p>
+      <p class="timeline__end reveal">…y las que nos faltan por tomar ♥</p>
     </section>
 
     <section class="playlist reveal" aria-labelledby="playlistTitle">
@@ -91,7 +95,7 @@
     <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Foto anterior">‹</button>
     <figure class="lightbox__figure">
       <img id="lbImg" alt="" />
-      <figcaption id="lbCount"></figcaption>
+      <figcaption><span class="lightbox__note" id="lbNote"></span><span class="lightbox__count" id="lbCount"></span></figcaption>
     </figure>
     <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Foto siguiente">›</button>
   </div>
