@@ -105,9 +105,34 @@
     const target = Math.min(span, Math.max(0, window.innerHeight * 0.42 - r.top));
     climbY += (target - climbY) * 0.35;
     if (Math.abs(target - climbY) < 0.5) climbY = target;
-    climbers.style.transform = "translateY(" + climbY.toFixed(1) + "px)";
+    // "translate" (no "transform"): el tamaño que se les da con "scale" no debe encoger el recorrido
+    climbers.style.translate = "0 " + climbY.toFixed(1) + "px";
+    checkMoments();
     if (climbY !== target) requestAnimationFrame(placeClimbers);
   }
+  // Al pasar por cada foto (su corazón sobre el hilo) se dan un beso o un abrazo, una y una.
+  let marks = [], lastY = 0, gestureTimer = null;
+  function measureMarks() {
+    marks = Array.from(timeline.children).map((li) => timeline.offsetTop + li.offsetTop + 28);
+  }
+  function checkMoments() {
+    if (!marks.length) measureMarks();
+    const y = climbY + 30;  // la altura de sus manos sobre el hilo
+    const lo = Math.min(lastY, y), hi = Math.max(lastY, y);
+    for (let i = 0; i < marks.length; i++) {
+      if (marks[i] > lo && marks[i] <= hi) { gesture(i % 2 ? "is-hug" : "is-kiss"); break; }
+    }
+    lastY = y;
+  }
+  function gesture(cls) {
+    climbers.classList.remove("is-kiss", "is-hug");
+    void climbers.offsetWidth;  // reinicia la animación
+    climbers.classList.add(cls);
+    clearTimeout(gestureTimer);
+    gestureTimer = setTimeout(() => climbers.classList.remove(cls), 1300);
+  }
+  window.addEventListener("load", measureMarks);
+  window.addEventListener("resize", measureMarks);
   function onScroll() {
     if (Math.abs(window.scrollY - lastScroll) > 2) {
       climbers.classList.add("is-moving");
