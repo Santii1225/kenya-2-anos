@@ -68,7 +68,38 @@
         <p class="gallery__intro">Baja despacito: entre foto y foto se cuelan nuestras canciones.</p>
         <button class="slideshow-btn" id="slideshowBtn" type="button">▶ Verlas una por una</button>
       </div>
-      <ol class="timeline" id="timeline"></ol>
+      <div class="timeline-wrap" id="timelineWrap">
+        <ol class="timeline" id="timeline"></ol>
+        <!-- Nosotros dos, bajando por el hilo conforme se baja la página -->
+        <div class="climbers" id="climbers" aria-hidden="true">
+          <svg viewBox="0 0 80 96" width="80" height="96">
+            <g class="climbers__float"><path class="climbers__heart" d="M40 14 C37 9 30 10 30 16 C30 21 40 26 40 26 C40 26 50 21 50 16 C50 10 43 9 40 14 Z"/></g>
+            <g class="climbers__body">
+              <!-- él -->
+              <g class="climber climber--him">
+                <path class="arm" d="M30 44 L37 30" />
+                <circle class="skin" cx="27" cy="40" r="7" />
+                <path class="hair-him" d="M20 39 C20 31 34 31 34 38 C30 35 25 35 20 39 Z" />
+                <rect class="shirt-him" x="21" y="47" width="12" height="16" rx="5" />
+                <path class="arm" d="M24 52 L33 60" />
+                <g class="leg leg--l"><path d="M24 62 L22 78" /></g>
+                <g class="leg leg--r"><path d="M30 62 L32 78" /></g>
+              </g>
+              <!-- ella -->
+              <g class="climber climber--her">
+                <path class="arm" d="M50 44 L43 30" />
+                <path class="hair-her" d="M45 38 C45 29 61 29 61 38 L62 52 L44 52 Z" />
+                <circle class="skin" cx="53" cy="40" r="7" />
+                <path class="hair-her" d="M46 38 C47 32 59 32 60 38 C56 35 50 35 46 38 Z" />
+                <path class="dress-her" d="M48 47 L58 47 L62 66 L44 66 Z" />
+                <path class="arm" d="M56 52 L47 60" />
+                <g class="leg leg--l"><path d="M50 66 L48 80" /></g>
+                <g class="leg leg--r"><path d="M56 66 L58 80" /></g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
       <p class="gallery__empty" id="galleryEmpty" hidden>Aquí van nuestras fotos ♥</p>
       <p class="timeline__end reveal">…y las que nos faltan por tomar ♥</p>
     </section>

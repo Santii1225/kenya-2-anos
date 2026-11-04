@@ -94,6 +94,33 @@
     showMoment.observe(li);
   });
 
+  /* ---------- Los dos bajando por el hilo ---------- */
+  const climbers = $("climbers"), wrap = $("timelineWrap");
+  let climbY = 0, lastScroll = window.scrollY, stopTimer = null, ticking = false;
+  function placeClimbers() {
+    ticking = false;
+    const r = wrap.getBoundingClientRect();
+    const span = Math.max(0, wrap.offsetHeight - climbers.offsetHeight - 40);
+    // bajan al ritmo de la página: su sitio es un poco arriba del centro de la pantalla
+    const target = Math.min(span, Math.max(0, window.innerHeight * 0.42 - r.top));
+    climbY += (target - climbY) * 0.35;
+    if (Math.abs(target - climbY) < 0.5) climbY = target;
+    climbers.style.transform = "translateY(" + climbY.toFixed(1) + "px)";
+    if (climbY !== target) requestAnimationFrame(placeClimbers);
+  }
+  function onScroll() {
+    if (Math.abs(window.scrollY - lastScroll) > 2) {
+      climbers.classList.add("is-moving");
+      clearTimeout(stopTimer);
+      stopTimer = setTimeout(() => climbers.classList.remove("is-moving"), 220);
+    }
+    lastScroll = window.scrollY;
+    if (!ticking) { ticking = true; requestAnimationFrame(placeClimbers); }
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  placeClimbers();
+
   /* ---------- Visor ---------- */
   const lb = $("lightbox"), lbImg = $("lbImg"), lbCount = $("lbCount");
   let current = 0, slideTimer = null;
@@ -238,9 +265,11 @@
   });
   markSong();
   // Vista previa sin portada (pruebas): index.html#abierto
-  if (location.hash === "#abierto") {
+  if (location.hash.startsWith("#abierto")) {
     $("cover").remove();
     document.body.classList.remove("locked");
     document.querySelectorAll(".reveal, .moment").forEach((el) => el.classList.add("is-visible"));
+    const y = parseInt(location.hash.split("-")[1] || "0", 10);  // #abierto-3000: baja hasta ahí
+    if (y) setTimeout(() => window.scrollTo(0, y), 300);
   }
 })();

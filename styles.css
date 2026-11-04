@@ -156,6 +156,32 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.7rem, 5vw, 
 .moment__meta { margin-top: 8px; font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rose); }
 .timeline__end { font-family: var(--script); font-size: 2.2rem; color: var(--wine); margin-top: 8px; }
 
+/* Los dos bajando por el hilo */
+.timeline-wrap { position: relative; }
+.climbers {
+  position: absolute; top: 0; left: 50%; z-index: 3;
+  width: 80px; height: 96px; margin-left: -40px;
+  pointer-events: none; will-change: transform;
+  scale: 1.4; transform-origin: top center;
+}
+.climbers svg { overflow: visible; display: block; filter: drop-shadow(0 6px 8px rgba(42, 15, 26, 0.18)); }
+.climbers__body { transform-origin: 40px 28px; animation: sway 3.2s ease-in-out infinite; }
+.climbers .arm, .climbers .leg path { stroke: #6b4a3a; stroke-width: 3.2; stroke-linecap: round; fill: none; }
+.climbers .skin { fill: #c98e6a; }
+.climbers .hair-him { fill: #1d1412; }
+.climbers .hair-her { fill: #241614; }
+.climbers .shirt-him { fill: #3f5f8f; }
+.climbers .dress-her { fill: var(--rose); }
+.climbers .leg { transform-box: fill-box; transform-origin: top center; animation: dangle 1.6s ease-in-out infinite; }
+.climbers .leg--r { animation-delay: -0.8s; }
+.climbers.is-moving .leg { animation-duration: 0.45s; }
+.climbers.is-moving .climbers__body { animation-duration: 1.2s; }
+.climbers__heart { fill: var(--rose); }
+.climbers__float { transform-box: fill-box; transform-origin: center; animation: heart-float 2.4s ease-in-out infinite; }
+@keyframes sway { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
+@keyframes dangle { 0%, 100% { transform: rotate(-14deg); } 50% { transform: rotate(14deg); } }
+@keyframes heart-float { 0%, 100% { transform: translateY(0) scale(1); opacity: 0.9; } 50% { transform: translateY(-5px) scale(1.12); opacity: 1; } }
+
 /* Lista de canciones */
 .songs { list-style: none; max-width: 560px; margin: 24px auto 0; text-align: left; }
 .songs li + li { margin-top: 10px; }
@@ -242,6 +268,7 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.7rem, 5vw, 
   .counter__grid div:nth-child(4), .counter__grid div:nth-child(5) { grid-column: span 3; }
   .timeline { margin-top: 36px; }
   .timeline::before { left: 14px; }
+  .climbers { left: 15px; scale: 0.8; }
   .moment, .moment:nth-child(even) { width: 100%; margin-left: 0; padding: 0 0 44px 40px; text-align: left; }
   .moment + .moment { margin-top: 0; }
   .moment::after, .moment:nth-child(even)::after { left: 1px; right: auto; top: 22px; }
