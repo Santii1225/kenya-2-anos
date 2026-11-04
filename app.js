@@ -75,7 +75,8 @@
     const li = document.createElement("li");
     li.className = "moment";
     li.innerHTML = '<div class="moment__card"><button class="moment__photo" type="button"><img alt="" /></button>' +
-                   '<p class="moment__note"></p><p class="moment__meta"></p></div>';
+                   (p.frase ? '<p class="moment__note"></p><p class="moment__song"></p>' : '') +
+                   '<p class="moment__meta"></p></div>';
     li.querySelector(".moment__card").style.setProperty("--tilt", (((i * 37) % 5) - 2) * 0.8 + "deg");
     const img = li.querySelector("img");
     img.src = p.mini;
@@ -83,8 +84,12 @@
     img.height = p.h;
     img.loading = "lazy";
     img.decoding = "async";
-    img.alt = "Kenya y Santi: " + (p.nota || "foto " + (i + 1));
-    li.querySelector(".moment__note").textContent = p.nota || "";
+    img.alt = "Kenya y Santi, foto " + (i + 1);
+    if (p.frase) {
+      li.classList.add("moment--song");
+      li.querySelector(".moment__note").textContent = "«" + p.frase + "»";
+      li.querySelector(".moment__song").textContent = "♪ " + p.cancion;
+    }
     li.querySelector(".moment__meta").textContent = p.fecha ? p.fecha : "♥ " + (i + 1);
     li.querySelector(".moment__photo").setAttribute("aria-label", "Ver en grande la foto " + (i + 1));
     li.querySelector(".moment__photo").addEventListener("click", () => openLightbox(i));
@@ -103,7 +108,7 @@
     lbImg.style.animation = "";
     lbImg.src = PHOTOS[current].src;
     lbImg.alt = "Kenya y Santi, foto " + (current + 1);
-    $("lbNote").textContent = PHOTOS[current].nota || "";
+    $("lbNote").textContent = PHOTOS[current].frase ? "«" + PHOTOS[current].frase + "»  ♪ " + PHOTOS[current].cancion : "";
     lbCount.textContent = (PHOTOS[current].fecha ? PHOTOS[current].fecha + "  ·  " : "") + (current + 1) + " / " + PHOTOS.length +
                           (slideTimer ? "  ·  toca la foto para pausar" : "");
     new Image().src = PHOTOS[(current + 1) % PHOTOS.length].src;  // precarga la siguiente

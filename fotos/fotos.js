@@ -1,13 +1,12 @@
 // Nuestras fotos, en el orden en que las tomamos.
-// "nota": lo que dice debajo de cada foto. "fecha": escribe aquí la fecha si la recuerdas
-// (por ejemplo "14 de febrero de 2025"); si se deja vacía, no se muestra.
+// Cada 3 fotos va una frase inspirada en una de nuestras canciones ("frase" y "cancion").
+// "fecha": escribe aquí la fecha si la recuerdas (por ejemplo "14 de febrero de 2025"); vacía no se muestra.
 window.FOTOS = [
  {
   "src": "fotos/001.jpg",
   "mini": "fotos/mini/001.jpg",
   "w": 461,
   "h": 820,
-  "nota": "Aquí empieza nuestra historia, y desde entonces no he dejado de sonreír.",
   "fecha": ""
  },
  {
@@ -15,7 +14,6 @@ window.FOTOS = [
   "mini": "fotos/mini/002.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Tu lengüita traviesa, mi parte favorita de cada foto.",
   "fecha": ""
  },
  {
@@ -23,15 +21,15 @@ window.FOTOS = [
   "mini": "fotos/mini/003.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Contigo hasta posar se siente fácil.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Tú eres mi regalo de amor.",
+  "cancion": "Un Regalo de Amor · Liberación"
  },
  {
   "src": "fotos/004.jpg",
   "mini": "fotos/mini/004.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Caminar a tu lado es mi plan favorito.",
   "fecha": ""
  },
  {
@@ -39,7 +37,6 @@ window.FOTOS = [
   "mini": "fotos/mini/005.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Cualquier calle se vuelve bonita si vas tú.",
   "fecha": ""
  },
  {
@@ -47,15 +44,15 @@ window.FOTOS = [
   "mini": "fotos/mini/006.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Esa sonrisa tuya me desarma.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Contigo cualquier viaje se siente como Tel Aviv.",
+  "cancion": "Tel Aviv · Danny Ocean"
  },
  {
   "src": "fotos/007.jpg",
   "mini": "fotos/mini/007.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Cerquita de ti, donde quiero estar siempre.",
   "fecha": ""
  },
  {
@@ -63,7 +60,6 @@ window.FOTOS = [
   "mini": "fotos/mini/008.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Las noches contigo siempre saben a poco.",
   "fecha": ""
  },
  {
@@ -71,15 +67,15 @@ window.FOTOS = [
   "mini": "fotos/mini/009.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Un beso robado, de los muchos que te debo.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Una de las cosas que no te dije: eres lo mejor que me ha pasado.",
+  "cancion": "Cosas Que No Te Dije · Saiko"
  },
  {
   "src": "fotos/010.jpg",
   "mini": "fotos/mini/010.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Tus ojos brillan más que cualquier luz.",
   "fecha": ""
  },
  {
@@ -87,7 +83,6 @@ window.FOTOS = [
   "mini": "fotos/mini/011.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Mi lugar seguro tiene tu nombre.",
   "fecha": ""
  },
  {
@@ -95,15 +90,15 @@ window.FOTOS = [
   "mini": "fotos/mini/012.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Nadie me hace reír como tú.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Porque la gloria eres tú.",
+  "cancion": "La Gloria Eres Tú · Luis Miguel"
  },
  {
   "src": "fotos/013.jpg",
   "mini": "fotos/mini/013.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Contigo hasta los días normales se vuelven especiales.",
   "fecha": ""
  },
  {
@@ -111,7 +106,6 @@ window.FOTOS = [
   "mini": "fotos/mini/014.jpg",
   "w": 461,
   "h": 820,
-  "nota": "Tú y yo, siempre en la misma foto.",
   "fecha": ""
  },
  {
@@ -119,15 +113,15 @@ window.FOTOS = [
   "mini": "fotos/mini/015.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Los besos en la mejilla también cuentan como «te amo».",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Y tú brillas, siempre brillas.",
+  "cancion": "Brillas · León Larregui"
  },
  {
   "src": "fotos/016.jpg",
   "mini": "fotos/mini/016.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Si pudiera, detendría el tiempo justo aquí.",
   "fecha": ""
  },
  {
@@ -135,7 +129,6 @@ window.FOTOS = [
   "mini": "fotos/mini/017.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Tu risa es mi canción favorita.",
   "fecha": ""
  },
  {
@@ -143,15 +136,15 @@ window.FOTOS = [
   "mini": "fotos/mini/018.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Abrazados, como debe ser.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Si pudiera, detendría el tiempo justo aquí.",
+  "cancion": "Si Pudiera · Manuel Medrano"
  },
  {
   "src": "fotos/019.jpg",
   "mini": "fotos/mini/019.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Un beso más, porque nunca son suficientes.",
   "fecha": ""
  },
  {
@@ -159,7 +152,6 @@ window.FOTOS = [
   "mini": "fotos/mini/020.jpg",
   "w": 461,
   "h": 820,
-  "nota": "Aunque esté oscuro, contigo todo se ve claro.",
   "fecha": ""
  },
  {
@@ -167,15 +159,15 @@ window.FOTOS = [
   "mini": "fotos/mini/021.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Haciendo caras, siendo nosotros.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Quédate conmigo, siempre.",
+  "cancion": "Quédate · Manuel Medrano"
  },
  {
   "src": "fotos/022.jpg",
   "mini": "fotos/mini/022.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Días de sol a tu lado.",
   "fecha": ""
  },
  {
@@ -183,7 +175,6 @@ window.FOTOS = [
   "mini": "fotos/mini/023.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Mi persona favorita en el mundo entero.",
   "fecha": ""
  },
  {
@@ -191,15 +182,15 @@ window.FOTOS = [
   "mini": "fotos/mini/024.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Esa forma tuya de hacerlo todo más bonito.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Contigo siento que la vida me dio más de lo que merezco.",
+  "cancion": "Siento Que Merezco Más · Latin Mafia"
  },
  {
   "src": "fotos/025.jpg",
   "mini": "fotos/mini/025.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Me encanta cómo me miras.",
   "fecha": ""
  },
  {
@@ -207,7 +198,6 @@ window.FOTOS = [
   "mini": "fotos/mini/026.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Nunca dejes de hacer esas caritas.",
   "fecha": ""
  },
  {
@@ -215,15 +205,15 @@ window.FOTOS = [
   "mini": "fotos/mini/027.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Cada salida contigo es una aventura.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Te regalo mis días, mis besos y mi vida.",
+  "cancion": "Te Regalo · Rels B, J Abecia"
  },
  {
   "src": "fotos/028.jpg",
   "mini": "fotos/mini/028.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Contigo hasta perderse es divertido.",
   "fecha": ""
  },
  {
@@ -231,7 +221,6 @@ window.FOTOS = [
   "mini": "fotos/mini/029.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Descansar a tu lado es lo mejor del día.",
   "fecha": ""
  },
  {
@@ -239,15 +228,15 @@ window.FOTOS = [
   "mini": "fotos/mini/030.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Juntitos, como siempre.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Entre amapolas, la más bonita eres tú.",
+  "cancion": "Amapolas · Leo Rizzi"
  },
  {
   "src": "fotos/031.jpg",
   "mini": "fotos/mini/031.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Tu cabeza en mi hombro y mi corazón en tus manos.",
   "fecha": ""
  },
  {
@@ -255,7 +244,6 @@ window.FOTOS = [
   "mini": "fotos/mini/032.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Tú y tus ocurrencias, mi debilidad.",
   "fecha": ""
  },
  {
@@ -263,15 +251,15 @@ window.FOTOS = [
   "mini": "fotos/mini/033.jpg",
   "w": 461,
   "h": 820,
-  "nota": "Ese momento en que todo se sentía perfecto.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "La vida me dio un regalo de amor: tú.",
+  "cancion": "Un Regalo de Amor · Liberación"
  },
  {
   "src": "fotos/034.jpg",
   "mini": "fotos/mini/034.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Prueba de que soy tuyo y tú eres mía.",
   "fecha": ""
  },
  {
@@ -279,7 +267,6 @@ window.FOTOS = [
   "mini": "fotos/mini/035.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Viajar contigo es mi forma favorita de ir a cualquier parte.",
   "fecha": ""
  },
  {
@@ -287,15 +274,15 @@ window.FOTOS = [
   "mini": "fotos/mini/036.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Abrazada a mí, justo donde perteneces.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "No necesito irme lejos: mi Tel Aviv eres tú.",
+  "cancion": "Tel Aviv · Danny Ocean"
  },
  {
   "src": "fotos/037.jpg",
   "mini": "fotos/mini/037.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Mi compañera de todo.",
   "fecha": ""
  },
  {
@@ -303,7 +290,6 @@ window.FOTOS = [
   "mini": "fotos/mini/038.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Aquí ya sabía que eras tú.",
   "fecha": ""
  },
  {
@@ -311,15 +297,15 @@ window.FOTOS = [
   "mini": "fotos/mini/039.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Hasta las luces se ponían celosas de ti.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Todas las cosas que no te dije te las digo aquí: te amo.",
+  "cancion": "Cosas Que No Te Dije · Saiko"
  },
  {
   "src": "fotos/040.jpg",
   "mini": "fotos/mini/040.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Noches de luces y de nosotros.",
   "fecha": ""
  },
  {
@@ -327,7 +313,6 @@ window.FOTOS = [
   "mini": "fotos/mini/041.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Tu felicidad es mi felicidad.",
   "fecha": ""
  },
  {
@@ -335,15 +320,15 @@ window.FOTOS = [
   "mini": "fotos/mini/042.jpg",
   "w": 615,
   "h": 820,
-  "nota": "De noche, en el carro, cantando nuestras canciones.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Lo sé desde el primer día: la gloria eres tú.",
+  "cancion": "La Gloria Eres Tú · Luis Miguel"
  },
  {
   "src": "fotos/043.jpg",
   "mini": "fotos/mini/043.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Bajo el cielo azul, contigo.",
   "fecha": ""
  },
  {
@@ -351,7 +336,6 @@ window.FOTOS = [
   "mini": "fotos/mini/044.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Me haces sentir en casa en cualquier lugar.",
   "fecha": ""
  },
  {
@@ -359,15 +343,15 @@ window.FOTOS = [
   "mini": "fotos/mini/045.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Tú y yo contra el frío.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Brillas más que cualquier luz de esta foto.",
+  "cancion": "Brillas · León Larregui"
  },
  {
   "src": "fotos/046.jpg",
   "mini": "fotos/mini/046.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Aunque traiga cubrebocas, se nota que estoy sonriendo.",
   "fecha": ""
  },
  {
@@ -375,7 +359,6 @@ window.FOTOS = [
   "mini": "fotos/mini/047.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Acurrucados, mi forma favorita de estar.",
   "fecha": ""
  },
  {
@@ -383,15 +366,15 @@ window.FOTOS = [
   "mini": "fotos/mini/048.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Tu sonrisa es mi lugar favorito.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Si pudiera, te elegiría otra vez.",
+  "cancion": "Si Pudiera · Manuel Medrano"
  },
  {
   "src": "fotos/049.jpg",
   "mini": "fotos/mini/049.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Las mejores tonterías son contigo.",
   "fecha": ""
  },
  {
@@ -399,7 +382,6 @@ window.FOTOS = [
   "mini": "fotos/mini/050.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Cada día me das una nueva razón para quererte.",
   "fecha": ""
  },
  {
@@ -407,15 +389,15 @@ window.FOTOS = [
   "mini": "fotos/mini/051.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Esa mirada tuya lo dice todo.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Quédate, que contigo todo está bien.",
+  "cancion": "Quédate · Manuel Medrano"
  },
  {
   "src": "fotos/052.jpg",
   "mini": "fotos/mini/052.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Diciembre se ve más bonito a tu lado.",
   "fecha": ""
  },
  {
@@ -423,7 +405,6 @@ window.FOTOS = [
   "mini": "fotos/mini/053.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Mi reina con su corona.",
   "fecha": ""
  },
  {
@@ -431,15 +412,15 @@ window.FOTOS = [
   "mini": "fotos/mini/054.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Todo lo que necesito cabe en esta foto.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Merezco más… y la vida me dio a ti.",
+  "cancion": "Siento Que Merezco Más · Latin Mafia"
  },
  {
   "src": "fotos/055.jpg",
   "mini": "fotos/mini/055.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Los viajes largos se hacen cortos contigo.",
   "fecha": ""
  },
  {
@@ -447,7 +428,6 @@ window.FOTOS = [
   "mini": "fotos/mini/056.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Dormida o despierta, eres lo más bonito que tengo.",
   "fecha": ""
  },
  {
@@ -455,15 +435,15 @@ window.FOTOS = [
   "mini": "fotos/mini/057.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Días de diversión contigo.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Te regalo todo lo que soy.",
+  "cancion": "Te Regalo · Rels B, J Abecia"
  },
  {
   "src": "fotos/058.jpg",
   "mini": "fotos/mini/058.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Gritar, reír y volver a gritar: así son los días contigo.",
   "fecha": ""
  },
  {
@@ -471,7 +451,6 @@ window.FOTOS = [
   "mini": "fotos/mini/059.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Mi copiloto en todas las aventuras.",
   "fecha": ""
  },
  {
@@ -479,15 +458,15 @@ window.FOTOS = [
   "mini": "fotos/mini/060.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Reír contigo es mi terapia.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Contigo todo florece como amapolas.",
+  "cancion": "Amapolas · Leo Rizzi"
  },
  {
   "src": "fotos/061.jpg",
   "mini": "fotos/mini/061.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Ya sabes que siempre voy a querer una foto contigo.",
   "fecha": ""
  },
  {
@@ -495,7 +474,6 @@ window.FOTOS = [
   "mini": "fotos/mini/062.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Bajo luces rojas, pero el amor es todo tuyo.",
   "fecha": ""
  },
  {
@@ -503,15 +481,15 @@ window.FOTOS = [
   "mini": "fotos/mini/063.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Brillas, siempre brillas.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Cada día contigo es un regalo de amor.",
+  "cancion": "Un Regalo de Amor · Liberación"
  },
  {
   "src": "fotos/064.jpg",
   "mini": "fotos/mini/064.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Hasta en las noches de miedo me siento valiente contigo.",
   "fecha": ""
  },
  {
@@ -519,7 +497,6 @@ window.FOTOS = [
   "mini": "fotos/mini/065.jpg",
   "w": 820,
   "h": 615,
-  "nota": "Gritos, luces y tú: el combo perfecto.",
   "fecha": ""
  },
  {
@@ -527,15 +504,15 @@ window.FOTOS = [
   "mini": "fotos/mini/066.jpg",
   "w": 461,
   "h": 820,
-  "nota": "Tus caritas me matan de amor.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Contigo hasta lo de diario parece un viaje a Tel Aviv.",
+  "cancion": "Tel Aviv · Danny Ocean"
  },
  {
   "src": "fotos/067.jpg",
   "mini": "fotos/mini/067.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Un beso en la frente para que sepas que te cuido.",
   "fecha": ""
  },
  {
@@ -543,7 +520,6 @@ window.FOTOS = [
   "mini": "fotos/mini/068.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Siempre voy a robarte besos.",
   "fecha": ""
  },
  {
@@ -551,15 +527,15 @@ window.FOTOS = [
   "mini": "fotos/mini/069.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Tú, el sol y yo.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Cosas que no te dije: que contigo quiero todo.",
+  "cancion": "Cosas Que No Te Dije · Saiko"
  },
  {
   "src": "fotos/070.jpg",
   "mini": "fotos/mini/070.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Compartir hasta el antojo contigo.",
   "fecha": ""
  },
  {
@@ -567,7 +543,6 @@ window.FOTOS = [
   "mini": "fotos/mini/071.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Cerquita, siempre cerquita.",
   "fecha": ""
  },
  {
@@ -575,15 +550,15 @@ window.FOTOS = [
   "mini": "fotos/mini/072.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Contigo todo es mejor, hasta lo más sencillo.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "No busco más: la gloria eres tú.",
+  "cancion": "La Gloria Eres Tú · Luis Miguel"
  },
  {
   "src": "fotos/073.jpg",
   "mini": "fotos/mini/073.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Las mejores pláticas son en el carro contigo.",
   "fecha": ""
  },
  {
@@ -591,7 +566,6 @@ window.FOTOS = [
   "mini": "fotos/mini/074.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Mírate, eres preciosa.",
   "fecha": ""
  },
  {
@@ -599,15 +573,15 @@ window.FOTOS = [
   "mini": "fotos/mini/075.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Nunca me canso de tomarnos fotos.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Hasta en un día gris, tú brillas.",
+  "cancion": "Brillas · León Larregui"
  },
  {
   "src": "fotos/076.jpg",
   "mini": "fotos/mini/076.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Una más, porque contigo nunca es la última.",
   "fecha": ""
  },
  {
@@ -615,7 +589,6 @@ window.FOTOS = [
   "mini": "fotos/mini/077.jpg",
   "w": 615,
   "h": 820,
-  "nota": "La lengüita de siempre, el amor de siempre.",
   "fecha": ""
  },
  {
@@ -623,15 +596,15 @@ window.FOTOS = [
   "mini": "fotos/mini/078.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Que nunca nos falte esta alegría.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Si pudiera, viviría este día una y otra vez.",
+  "cancion": "Si Pudiera · Manuel Medrano"
  },
  {
   "src": "fotos/079.jpg",
   "mini": "fotos/mini/079.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Jugando, como dos niños enamorados.",
   "fecha": ""
  },
  {
@@ -639,7 +612,6 @@ window.FOTOS = [
   "mini": "fotos/mini/080.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Así de cerca te quiero siempre.",
   "fecha": ""
  },
  {
@@ -647,15 +619,15 @@ window.FOTOS = [
   "mini": "fotos/mini/081.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Un beso que guardo con todo el corazón.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Quédate un ratito más… y luego otro.",
+  "cancion": "Quédate · Manuel Medrano"
  },
  {
   "src": "fotos/082.jpg",
   "mini": "fotos/mini/082.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Tu sonrisa ilumina cualquier lugar.",
   "fecha": ""
  },
  {
@@ -663,7 +635,6 @@ window.FOTOS = [
   "mini": "fotos/mini/083.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Besitos que valen más que mil palabras.",
   "fecha": ""
  },
  {
@@ -671,15 +642,15 @@ window.FOTOS = [
   "mini": "fotos/mini/084.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Mi lugar en el mundo es a tu lado.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Siento que contigo tengo más de lo que pedí.",
+  "cancion": "Siento Que Merezco Más · Latin Mafia"
  },
  {
   "src": "fotos/085.jpg",
   "mini": "fotos/mini/085.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Bajo las estrellas, contigo.",
   "fecha": ""
  },
  {
@@ -687,7 +658,6 @@ window.FOTOS = [
   "mini": "fotos/mini/086.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Tus ocurrencias me alegran el día.",
   "fecha": ""
  },
  {
@@ -695,15 +665,15 @@ window.FOTOS = [
   "mini": "fotos/mini/087.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Contigo hasta el frío se siente bonito.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Te regalo este momento para siempre.",
+  "cancion": "Te Regalo · Rels B, J Abecia"
  },
  {
   "src": "fotos/088.jpg",
   "mini": "fotos/mini/088.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Mi niña bonita.",
   "fecha": ""
  },
  {
@@ -711,7 +681,6 @@ window.FOTOS = [
   "mini": "fotos/mini/089.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Te quiero así: feliz, conmigo.",
   "fecha": ""
  },
  {
@@ -719,15 +688,15 @@ window.FOTOS = [
   "mini": "fotos/mini/090.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Siempre juntos, pase lo que pase.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Mi flor favorita no es una amapola: eres tú.",
+  "cancion": "Amapolas · Leo Rizzi"
  },
  {
   "src": "fotos/091.jpg",
   "mini": "fotos/mini/091.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Recorriendo el mundo de tu mano.",
   "fecha": ""
  },
  {
@@ -735,7 +704,6 @@ window.FOTOS = [
   "mini": "fotos/mini/092.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Un besito en el camino.",
   "fecha": ""
  },
  {
@@ -743,15 +711,15 @@ window.FOTOS = [
   "mini": "fotos/mini/093.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Cada lugar se vuelve especial si estás tú.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Mi mejor regalo de amor tiene tu nombre.",
+  "cancion": "Un Regalo de Amor · Liberación"
  },
  {
   "src": "fotos/094.jpg",
   "mini": "fotos/mini/094.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Entre flores, la más bonita eres tú.",
   "fecha": ""
  },
  {
@@ -759,7 +727,6 @@ window.FOTOS = [
   "mini": "fotos/mini/095.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Bonita la vida… contigo.",
   "fecha": ""
  },
  {
@@ -767,15 +734,15 @@ window.FOTOS = [
   "mini": "fotos/mini/096.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Frente a la cascada, y lo más impresionante sigues siendo tú.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "A donde vayamos, contigo siempre es Tel Aviv.",
+  "cancion": "Tel Aviv · Danny Ocean"
  },
  {
   "src": "fotos/097.jpg",
   "mini": "fotos/mini/097.jpg",
   "w": 615,
   "h": 820,
-  "nota": "El frío no se siente si estoy contigo.",
   "fecha": ""
  },
  {
@@ -783,7 +750,6 @@ window.FOTOS = [
   "mini": "fotos/mini/098.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Caminando entre la niebla, pero contigo todo es claro.",
   "fecha": ""
  },
  {
@@ -791,15 +757,15 @@ window.FOTOS = [
   "mini": "fotos/mini/099.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Esos días que no quiero que se acaben.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Otra cosa que no te dije: me encanta cómo me miras.",
+  "cancion": "Cosas Que No Te Dije · Saiko"
  },
  {
   "src": "fotos/100.jpg",
   "mini": "fotos/mini/100.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Junto al fuego, aunque el calor de verdad es tu abrazo.",
   "fecha": ""
  },
  {
@@ -807,7 +773,6 @@ window.FOTOS = [
   "mini": "fotos/mini/101.jpg",
   "w": 820,
   "h": 615,
-  "nota": "Un rincón bonito para dos.",
   "fecha": ""
  },
  {
@@ -815,15 +780,15 @@ window.FOTOS = [
   "mini": "fotos/mini/102.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Cobijados, felices, nosotros.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "En cada foto lo confirmo: la gloria eres tú.",
+  "cancion": "La Gloria Eres Tú · Luis Miguel"
  },
  {
   "src": "fotos/103.jpg",
   "mini": "fotos/mini/103.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Abrigaditos y enamorados.",
   "fecha": ""
  },
  {
@@ -831,7 +796,6 @@ window.FOTOS = [
   "mini": "fotos/mini/104.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Con gorrito y todo, eres preciosa.",
   "fecha": ""
  },
  {
@@ -839,15 +803,15 @@ window.FOTOS = [
   "mini": "fotos/mini/105.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Esa carita tuya que me encanta.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Brillas, y yo no puedo dejar de mirarte.",
+  "cancion": "Brillas · León Larregui"
  },
  {
   "src": "fotos/106.jpg",
   "mini": "fotos/mini/106.jpg",
   "w": 461,
   "h": 820,
-  "nota": "Compartiendo hasta la bebida.",
   "fecha": ""
  },
  {
@@ -855,7 +819,6 @@ window.FOTOS = [
   "mini": "fotos/mini/107.jpg",
   "w": 461,
   "h": 820,
-  "nota": "Contigo hasta los días grises tienen color.",
   "fecha": ""
  },
  {
@@ -863,15 +826,15 @@ window.FOTOS = [
   "mini": "fotos/mini/108.jpg",
   "w": 461,
   "h": 820,
-  "nota": "Sonrisas que se me quedan grabadas.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Si pudiera, te abrazaría así para siempre.",
+  "cancion": "Si Pudiera · Manuel Medrano"
  },
  {
   "src": "fotos/109.jpg",
   "mini": "fotos/mini/109.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Me encanta cómo te recargas en mí.",
   "fecha": ""
  },
  {
@@ -879,7 +842,6 @@ window.FOTOS = [
   "mini": "fotos/mini/110.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Noches de paseo contigo.",
   "fecha": ""
  },
  {
@@ -887,15 +849,15 @@ window.FOTOS = [
   "mini": "fotos/mini/111.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Mi felicidad tiene tu cara.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Quédate, que lo mejor apenas empieza.",
+  "cancion": "Quédate · Manuel Medrano"
  },
  {
   "src": "fotos/112.jpg",
   "mini": "fotos/mini/112.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Tú y tus caritas, mi colección favorita.",
   "fecha": ""
  },
  {
@@ -903,7 +865,6 @@ window.FOTOS = [
   "mini": "fotos/mini/113.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Siempre a tu lado.",
   "fecha": ""
  },
  {
@@ -911,15 +872,15 @@ window.FOTOS = [
   "mini": "fotos/mini/114.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Contigo todo es una fiesta.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "No sé si lo merezco, pero aquí estás.",
+  "cancion": "Siento Que Merezco Más · Latin Mafia"
  },
  {
   "src": "fotos/115.jpg",
   "mini": "fotos/mini/115.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Un beso en medio de la diversión.",
   "fecha": ""
  },
  {
@@ -927,7 +888,6 @@ window.FOTOS = [
   "mini": "fotos/mini/116.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Así me haces sentir: completo.",
   "fecha": ""
  },
  {
@@ -935,15 +895,15 @@ window.FOTOS = [
   "mini": "fotos/mini/117.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Beso sorpresa, como te gustan.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Te regalo mis risas y mis abrazos.",
+  "cancion": "Te Regalo · Rels B, J Abecia"
  },
  {
   "src": "fotos/118.jpg",
   "mini": "fotos/mini/118.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Tú y yo, en cualquier versión.",
   "fecha": ""
  },
  {
@@ -951,7 +911,6 @@ window.FOTOS = [
   "mini": "fotos/mini/119.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Un día importante, y yo orgulloso a tu lado.",
   "fecha": ""
  },
  {
@@ -959,15 +918,15 @@ window.FOTOS = [
   "mini": "fotos/mini/120.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Orgulloso de ti, siempre.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Un campo de amapolas no se compara contigo.",
+  "cancion": "Amapolas · Leo Rizzi"
  },
  {
   "src": "fotos/121.jpg",
   "mini": "fotos/mini/121.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Juntos podemos con todo.",
   "fecha": ""
  },
  {
@@ -975,7 +934,6 @@ window.FOTOS = [
   "mini": "fotos/mini/122.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Tu sonrisa es mi recuerdo favorito.",
   "fecha": ""
  },
  {
@@ -983,15 +941,15 @@ window.FOTOS = [
   "mini": "fotos/mini/123.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Abrazos que lo curan todo.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Te guardo como mi regalo de amor más bonito.",
+  "cancion": "Un Regalo de Amor · Liberación"
  },
  {
   "src": "fotos/124.jpg",
   "mini": "fotos/mini/124.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Haciendo tonterías, como siempre.",
   "fecha": ""
  },
  {
@@ -999,7 +957,6 @@ window.FOTOS = [
   "mini": "fotos/mini/125.jpg",
   "w": 820,
   "h": 461,
-  "nota": "Nosotros, simplemente nosotros.",
   "fecha": ""
  },
  {
@@ -1007,15 +964,15 @@ window.FOTOS = [
   "mini": "fotos/mini/126.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Recostados, tranquilos, felices.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Mi destino favorito sigues siendo tú.",
+  "cancion": "Tel Aviv · Danny Ocean"
  },
  {
   "src": "fotos/127.jpg",
   "mini": "fotos/mini/127.jpg",
   "w": 614,
   "h": 820,
-  "nota": "En cada viaje, tú eres mi destino.",
   "fecha": ""
  },
  {
@@ -1023,7 +980,6 @@ window.FOTOS = [
   "mini": "fotos/mini/128.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Abrazado a ti, donde todo está bien.",
   "fecha": ""
  },
  {
@@ -1031,15 +987,15 @@ window.FOTOS = [
   "mini": "fotos/mini/129.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Te miro y sé que eres tú.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Y la cosa que más te quiero decir: gracias por quedarte.",
+  "cancion": "Cosas Que No Te Dije · Saiko"
  },
  {
   "src": "fotos/130.jpg",
   "mini": "fotos/mini/130.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Mi persona, mi hogar.",
   "fecha": ""
  },
  {
@@ -1047,7 +1003,6 @@ window.FOTOS = [
   "mini": "fotos/mini/131.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Pegaditos, como debe ser.",
   "fecha": ""
  },
  {
@@ -1055,15 +1010,15 @@ window.FOTOS = [
   "mini": "fotos/mini/132.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Cada abrazo tuyo es mi lugar favorito.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Para mí, la gloria eres tú.",
+  "cancion": "La Gloria Eres Tú · Luis Miguel"
  },
  {
   "src": "fotos/133.jpg",
   "mini": "fotos/mini/133.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Que nunca me falten tus abrazos.",
   "fecha": ""
  },
  {
@@ -1071,7 +1026,6 @@ window.FOTOS = [
   "mini": "fotos/mini/134.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Contigo hasta con lentes salgo guapo.",
   "fecha": ""
  },
  {
@@ -1079,15 +1033,15 @@ window.FOTOS = [
   "mini": "fotos/mini/135.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Tu lengüita sigue siendo mi parte favorita.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Cuando sonríes, brillas.",
+  "cancion": "Brillas · León Larregui"
  },
  {
   "src": "fotos/136.jpg",
   "mini": "fotos/mini/136.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Te elegiría una y mil veces.",
   "fecha": ""
  },
  {
@@ -1095,7 +1049,6 @@ window.FOTOS = [
   "mini": "fotos/mini/137.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Mi pareja para todo.",
   "fecha": ""
  },
  {
@@ -1103,15 +1056,15 @@ window.FOTOS = [
   "mini": "fotos/mini/138.jpg",
   "w": 615,
   "h": 820,
-  "nota": "Entre flores, tú y yo.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Si pudiera, guardaría esta sonrisa tuya en un frasco.",
+  "cancion": "Si Pudiera · Manuel Medrano"
  },
  {
   "src": "fotos/139.jpg",
   "mini": "fotos/mini/139.jpg",
   "w": 614,
   "h": 820,
-  "nota": "Noches que quiero repetir contigo.",
   "fecha": ""
  },
  {
@@ -1119,7 +1072,6 @@ window.FOTOS = [
   "mini": "fotos/mini/140.jpg",
   "w": 820,
   "h": 820,
-  "nota": "Un beso para seguir escribiendo nuestra historia.",
   "fecha": ""
  },
  {
@@ -1127,7 +1079,59 @@ window.FOTOS = [
   "mini": "fotos/mini/141.jpg",
   "w": 820,
   "h": 820,
-  "nota": "Y todo lo que nos falta por vivir, mi amor. Te amo.",
-  "fecha": ""
+  "fecha": "",
+  "frase": "Quédate, mi amor.",
+  "cancion": "Quédate · Manuel Medrano"
+ },
+ {
+  "src": "fotos/142.jpg",
+  "mini": "fotos/mini/142.jpg",
+  "w": 615,
+  "h": 820,
+  "fecha": "10 de febrero de 2026"
+ },
+ {
+  "src": "fotos/143.jpg",
+  "mini": "fotos/mini/143.jpg",
+  "w": 615,
+  "h": 820,
+  "fecha": "15 de febrero de 2026"
+ },
+ {
+  "src": "fotos/144.jpg",
+  "mini": "fotos/mini/144.jpg",
+  "w": 615,
+  "h": 820,
+  "fecha": "15 de febrero de 2026",
+  "frase": "Te regalo mi tiempo, que contigo vale más.",
+  "cancion": "Te Regalo · Rels B, J Abecia"
+ },
+ {
+  "src": "fotos/145.jpg",
+  "mini": "fotos/mini/145.jpg",
+  "w": 615,
+  "h": 820,
+  "fecha": "15 de febrero de 2026"
+ },
+ {
+  "src": "fotos/146.jpg",
+  "mini": "fotos/mini/146.jpg",
+  "w": 461,
+  "h": 820,
+  "fecha": "7 de abril de 2026"
+ },
+ {
+  "src": "fotos/147.jpg",
+  "mini": "fotos/mini/147.jpg",
+  "w": 615,
+  "h": 820,
+  "fecha": "19 de mayo de 2026"
+ },
+ {
+  "src": "fotos/148.jpg",
+  "mini": "fotos/mini/148.jpg",
+  "w": 615,
+  "h": 820,
+  "fecha": "12 de julio de 2026"
  }
 ];
